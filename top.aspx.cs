@@ -14,6 +14,7 @@ public partial class top : System.Web.UI.Page
         if (!IsPostBack)
         {
             //string CompanyName = (Session["RealName"].ToString() + (Session["ConpanyName"] != null ? ("    " + Session["ConpanyName"].ToString()) : ""));
+
             string CompanyName = Session["RealName"].ToString();
             Lit_Name.Text = CompanyName.Substring(0, CompanyName.Length>40 ? 40 : CompanyName.Length);
         }
